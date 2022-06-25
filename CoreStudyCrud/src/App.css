@@ -1,0 +1,152 @@
+@font-face {
+  font-family: clipneon;
+  src: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/707108/clip.ttf);
+}
+
+
+
+.DiaryEdit{
+  border: 1px solid black;
+  margin: 40px auto;
+  width: 400px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+  border-radius: 60px 60px 0 0; 
+  background-color: black;
+  border-style: none;
+  box-shadow: 5px 5px 10px 1px rgb(0, 93, 234, 0.5), -4px -5px 10px 1px rgba(0, 93, 234, 0.5);
+}
+.DiaryEdit h1{
+  margin:12px 0 20px 0;
+  padding-top: 5px;
+  color: #fff;
+  
+}
+.flux {
+  color: #426DFB;;
+  text-shadow: 0 0 3vw #003af7;
+}
+
+.flux {
+  font-family: clipneon;
+  animation: flux 2s linear infinite;
+  -moz-animation: flux 2s linear infinite;
+  -webkit-animation: flux 2s linear infinite;
+  -o-animation: flux 2s linear infinite;
+}
+
+@keyframes flux {
+  0%,
+  100% {
+    text-shadow: 0 0 1vw #1041FF, 0 0 3vw #1041FF, 0 0 10vw #1041FF, 0 0 10vw #1041FF, 0 0 .4vw #8BFDFE, .5vw .5vw .1vw #147280;
+    color: #28D7FE;
+  }
+  50% {
+    text-shadow: 0 0 .5vw #082180, 0 0 1.5vw #082180, 0 0 5vw #082180, 0 0 5vw #082180, 0 0 .2vw #082180, .5vw .5vw .1vw #0A3940;
+    color: #146C80;
+  }
+}
+
+.DiaryEdit input, textarea{
+  width: 300px;
+  margin-bottom: 14px;
+  border-style: none;
+}
+.DiaryEdit input{
+  height: 20px;
+}
+.DiaryEdit textarea{
+  height: 75px;
+  resize: none;
+}
+.DiaryEdit button{
+  font-size: 16px;
+  font-weight: 600;
+  width: 150px;
+  padding: 10px 20px;
+  margin-top: -5px;
+  margin-bottom: 15px;
+  border-radius: 60px;
+  border-style: none;
+  background-color: black;
+  color:#fff;
+  cursor: pointer;
+  border:2px solid #fff;
+}
+
+/* 여기까지가 에디터 */
+
+.DiaryList{
+  margin: -25px auto;
+  width: 360px;
+  background-color: black;
+  color:#fff;
+  padding: 20px;
+  border-radius: 0 0 60px 60px;
+  box-shadow: 5px 5px 10px 1px rgba(255, 63, 134, 0.5), -4px -5px 10px 1px rgba(255, 63, 134, 0.5);
+}
+.DiaryList h4{
+  margin-left: 25px;
+}
+.date{
+
+  font-size: 13px;
+  color: rgb(210, 210, 210);
+}
+.neon {
+  margin-top: -5px;
+  text-align: center;
+  font-family: neon;
+  color: #FB4264;
+  text-shadow: 0 0 3vw #F40A35;
+}
+.neon {
+  font-family: clipneon;
+  animation: neon 1s ease infinite;
+  -moz-animation: neon 1s ease infinite;
+  -webkit-animation: neon 1s ease infinite;
+}
+
+@keyframes neon {
+  0%,
+  100% {
+    text-shadow: 0 0 1vw #FA1C16, 0 0 3vw #FA1C16, 0 0 10vw #FA1C16, 0 0 10vw #FA1C16, 0 0 .4vw #FED128, .5vw .5vw .1vw #806914;
+    color: #FED128;
+  }
+  50% {
+    text-shadow: 0 0 .5vw #800E0B, 0 0 1.5vw #800E0B, 0 0 5vw #800E0B, 0 0 5vw #800E0B, 0 0 .2vw #800E0B, .5vw .5vw .1vw #40340A;
+    color: #806914;
+  }
+}
+
+/* 여기까지 리스트 */
+.DiaryItem{
+  margin-bottom: 20px;
+  margin-left: 5px;
+  background-color: #a2958e;
+  padding: 20px;
+  border-radius: 50px;
+}
+.DiaryItem span{
+  cursor: pointer;
+}
+.DiaryItem button{
+  border-radius: 60px;
+  border-style: none;
+  border: 1px solid #fff;
+  background-color: black;
+  color:#fff;
+  padding: 5px;
+  margin-top: 5px;
+  cursor: pointer;
+}
+.DiaryItem button + button{
+  margin-left: 5px;
+}
+.DiaryItem_content{
+  margin: 10px 0;
+  font-size: 18px;
+}
