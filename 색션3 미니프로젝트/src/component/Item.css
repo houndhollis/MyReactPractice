@@ -1,0 +1,50 @@
+@font-face {
+  font-family: "GmarketSansBold";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff")
+    format("woff");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "GmarketSansLight";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansLight.woff")
+    format("woff");
+  font-weight: 200;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.Item {
+  font-family: "GmarketSansLight";
+  padding: 25px;
+  border-radius: 10px;
+  background-color: #f7f7f7;
+  margin-bottom: 15px;
+}
+
+.itemCreatedAt {
+  font-size: 13px;
+}
+
+.itemTitle {
+  font-family: "GmarketSansBold";
+  margin-bottom: 10px;
+  /* border-bottom: 1px solid rgb(189, 189, 189); */
+}
+
+.itemContent {
+  margin-bottom: 10px;
+}
+
+.contentBottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.buttonBox {
+}

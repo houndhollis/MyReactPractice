@@ -1,0 +1,122 @@
+@font-face {
+  font-family: "GmarketSansBold";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff")
+    format("woff");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "GmarketSansLight";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansLight.woff")
+    format("woff");
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: "GmarketSansMedium";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff")
+    format("woff");
+  font-weight: 400;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  width: 75%;
+  margin: 0 auto;
+}
+
+header {
+  display: flex;
+  height: 80px;
+  align-items: center;
+}
+
+.logoTitle {
+  font-size: 54px;
+  text-align: center;
+  font-family: "GmarketSansBold";
+  color: rgb(51, 93, 207);
+  text-decoration-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Basicbutton css */
+
+.Basicbutton {
+  width: 80px;
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+  font-family: "GmarketSansMedium";
+  cursor: pointer;
+}
+
+.Basicbutton_edit {
+  background-color: rgb(1, 163, 1);
+  color: #fff;
+  margin-right: 20px;
+}
+
+/* button css */
+.circleButton {
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 50px;
+  font-family: "GmarketSansMedium";
+  cursor: pointer;
+}
+
+.circleButton.delete {
+  background-color: rgb(1, 163, 1);
+  color: #fff;
+  margin-right: 15px;
+}
+
+.circleButton.update {
+  background-color: rgb(51, 93, 207);
+  color: #fff;
+}
+
+/* 에딧 css */
+.DiaryEdit{
+  text-align: center;
+  margin-top: 50px;
+}
+.DiaryEdit h1{
+  color: rgb(1, 163, 1);
+}
+.DiaryEdit input ,textarea{
+  text-indent: 10px;
+  width: 500px;
+  margin-top: 20px;
+  background-color: rgb(236, 236, 236);
+  border: none;
+  border-radius: 5px;
+  
+}
+.DiaryEdit input{
+  height: 30px;
+}
+.DiaryEdit textarea{
+  height: 250px;
+  resize: none;
+}
+.DiaryEdit button{
+  border: none;
+  width: 300px;
+  padding: 10px 20px;
+  margin: 20px;
+  background-color: rgb(60, 195, 60);
+  color: #fff;
+  cursor: pointer;
+  border-radius: 10px;
+}

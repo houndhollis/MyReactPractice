@@ -1,0 +1,6 @@
+.ItemList {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 48px;
+  margin-top: 50px;
+}
