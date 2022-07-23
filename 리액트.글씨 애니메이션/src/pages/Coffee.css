@@ -1,0 +1,132 @@
+.back{
+    position: relative;
+    width: 100vw;
+    height: 850px;
+    
+}
+.main_container{
+    position:absolute;
+    color:#fff;
+    font-size: 65px;
+    font-weight: 700;
+    top: 30%;
+    left: 20px;
+    z-index: 100;
+    margin-top: 80px;
+    margin-left: 40px;
+    animation: slide 1.3s ease-out;
+}
+.a1{
+   top:30%;
+}
+.a2{
+    top:42%
+}
+.a3{
+    top:56%
+}
+.a4{
+    top:68%
+}
+.main_container.on{
+    position:absolute;
+    color:#fff;
+    font-size: 65px;
+    font-weight: 700;
+    top: 30%;
+    left: 20px;
+    z-index: 100;
+    margin-top: 80px;
+    margin-left: 40px;
+    animation: disapper 1.3s ease-out forwards;
+
+}
+
+@keyframes slide {
+    from{
+        left:-500px;
+        opacity: 0;
+    }
+    to{
+        left: 20px;
+        opacity: 1;
+    }
+    
+}
+@keyframes disapper {
+    from{
+        left: 20px;
+        opacity: 1;
+    }
+    to{
+        left: -500px;
+        opacity: 0;
+    }
+}
+
+/* 두번째 페이지 */
+
+.back1{
+    width: 100vw;
+    height: 700px;
+}
+.b_container{
+    position:absolute;
+    color:#fff;
+    font-size: 65px;
+    font-weight: 700;
+    top: 140%;
+    left: 440px;
+    z-index: 100;
+    margin-top: 80px;
+    margin-left: 40px;
+    animation: slideB 1.3s ease-out;
+}
+.b_container>.b1{
+    font-size: 50px;
+    color:#5edff6;
+    font-weight: 700;
+}
+.b_container>.b2{
+    width: 600px;
+    font-size: 30px;
+    color: #ffffff;
+    text-align: center;
+    margin-left: 40px;
+    font-weight: 700;
+}
+.b_container.on{
+    position:absolute;
+    color:#fff;
+    font-size: 65px;
+    font-weight: 700;
+    top: 140%;
+    left: 440px;
+    z-index: 100;
+    margin-top: 80px;
+    margin-left: 40px;
+    animation: disapperB 1.3s ease-out forwards;
+}
+
+
+@keyframes slideB {
+    from{
+        left: 100px;
+        opacity: 0;
+    }
+    to{
+        left: 440px;
+        opacity: 1;
+    }
+    
+}
+@keyframes disapperB {
+    from{
+        left: 440px;
+        opacity: 1;
+    }
+    to{
+        left: 100px;
+        opacity: 0;
+    }
+}
