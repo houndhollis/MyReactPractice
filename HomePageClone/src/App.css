@@ -1,0 +1,144 @@
+body{
+    background-color: #141414;
+    background-image:  
+    linear-gradient(rgba(0, 0, 0,0.3),  rgba(0, 0, 0,0)) ,
+    url('https://occ-0-3683-988.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABQjXH9o9c0HL0qrxVAGG_l9SIxIFJH74ypzSIBy4JNRYP9NznAxReHuWBLqJA4PyLM3RLmpCiuL46RFFdMPh-w7iQd0tyS0FIwAk.webp?r=790');
+    background-size:contain;
+    background-repeat: no-repeat;
+}
+.main_img{
+    border-radius: 20px;
+    width: 200px;
+    height: 300px;
+}
+
+/* 헤더영역 */
+.Header{
+    height: 70px;
+    padding:0 4%;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    background:linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0));
+}
+.Header img{
+    width: 92.5px;
+    margin-right: -10px;
+}
+
+.Header_nav{
+    width: 100%;
+    color:#e5e5e5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Header_nav_img > img{
+    width: 35px;
+    height: 35px;
+    margin-right: 9px;
+}
+
+.Header ul{
+    display: flex;
+    list-style: none;
+    margin-left: 1px;
+    font-size: 14px;
+    margin-top: 6px;
+}
+.Header ul> li:first-child{
+    color:#fff;
+    font-weight: 700;
+}
+
+.Header ul > li{
+    margin-right: 19px;
+}
+
+
+/* Main 영역 */
+
+.Main{
+    padding: 4% 4%;
+}
+
+.Main > img{
+    width: 40%;
+}
+
+.Main > .Main_p{
+    width: 40%;
+    color:#fff;
+    margin-top: 15px;
+    font-size: 1.2vw;
+}
+
+.Main > .Main_btn{
+    margin-top: 20px;
+    width: 25%;
+    display: flex;
+    justify-content: start;
+}
+
+.btn1{
+    width: 35%;
+    background-color: #fff;
+    border-radius: 5px;
+    border: none;
+}
+
+.btn2{
+    width: 53%;
+    margin-left: 2%;
+    border-radius: 5px;
+    border: none;
+    background-color: rgba(109, 109, 110, 0.7);
+    color:#fff;
+
+}
+.Main_btn > button{
+    /* width: 33%; */
+    height: 50px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.Main_btn > button > span{
+    font-size: 125%;
+    font-weight: bold;
+}
+
+.Main_btn > button>img{
+    width: 50%;
+    height: 100%;
+}
+/* 리스트영역 */
+.List{
+ color:#fff;
+ margin-top: 8%;
+ margin-left: 40px;
+ width: 96%;
+ height: auto;
+}
+.List >span{
+    font-size: 2.0vw;
+    font-weight: bold;
+}
+.List_container{
+    display: flex;
+    overflow-x: auto;
+    cursor: pointer;
+}
+
+/* 아이템 영역 */
+
+.Item > img{
+    width: 216px;
+    height: 200px;
+    margin-bottom: 1000px;
+}
+.Item > img , img{
+    margin-right: 5px;
+}
