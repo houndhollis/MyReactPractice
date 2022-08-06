@@ -1,44 +1,77 @@
-.DiaryEditor{
-    text-align: center;
-    padding: 20px;
-    margin: 10px;
-    border: 1px solid black;
+body{
+  background-color: #f6f6f6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0px;
 }
-.DiaryEditor input, textarea{
-   width: 500px;
-   margin-bottom: 20px;
-   padding: 10px;
+@media (min-width: 650px){
+  .App{
+    width: 640px;
+  }
 }
-.DiaryEditor button{
-    width: 150px;
+@media (max-width: 650px){
+  .App{
+    width:90vw;
+  }
+}
+#root{
+  background-color: #fff;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 9px 0px 
+}
+.App{
+  min-height: 100vh;
+  padding: 0 20px;
+  
 }
 
-/* 리스트 */
-.DiaryList{
-    border: 1px solid gray;
-    padding: 20px;
-    margin-top: 20px;
+/* MyButton */
+.MyButton{
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+
+  padding: 10px 20px;
+  font-size: 18px;
+  white-space: nowrap;
+  /* 글자 잘림 방지 (너무길어서 두줄되는거 방지)*/
 }
-.DiaryList h2{
-    text-align: center;
+.MyButton_default{
+  background-color: #ececec;
+  color:black;
+}
+.MyButton_positive{
+  background-color: #64c964;
+  color:white;
+}
+.MyButton_negative{
+  background-color: #fd565f;
+  color:white;
 }
 
-/* 다이어리 아이템 */
-.DiaryItem{
-    background-color: rgb(240, 240, 240);
-    margin-bottom: 10px;
-    padding: 20px;
+/* HEADER */
+
+header{
+  padding:20px 0;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #e2e2e2;
 }
-.DiaryItem .info{
-    border-bottom: 1px solid gray;
-    padding-bottom: 10px;
-    margin-bottom: 10px;
+
+header> div{
+  display: flex;
 }
-.DiaryItem .date{
-    color: gray;
-    font-size: 12px;
+header .head_text{
+  width: 50%;
+  font-size: 25px;
+  justify-content: center;
 }
-.DiaryItem .button{
-    margin-top: 10px;
-    cursor: pointer;
+header .head_btn_left{
+  width: 25%;
+  justify-content: start;
+}
+header .head_btn_right{
+  width: 25%;
+  justify-content: end;
 }
