@@ -14,7 +14,7 @@ function App() {
       options: [
         { value: 1, label: "오시는 길", trigger: "4" },
         { value: 2, label: "가시는 길", trigger: "3" },
-        { value: 3, label: "🍻 운전 '길'", trigger: "5" }
+        { value: 3, label: "🍻 '길'", trigger: "5" }
       ]
     },
     {
@@ -37,7 +37,7 @@ function App() {
       options: [
         { value: 1, label: "오시는 길", trigger: "4" },
         { value: 2, label: "가시는 길", trigger: "3" },
-        { value: 3, label: "🍻 운전 '길'", trigger: "5" }
+        { value: 3, label: "🍻 '길'", trigger: "5" }
       ]
     },
   ];
