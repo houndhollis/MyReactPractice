@@ -8,6 +8,7 @@ const Slide = ({img}) => {
     </IMG>
   )
 }
+// 다른파일도 찾은거 업로드하기
 
 export default Slide
 
